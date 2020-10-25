@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>
+            unidad8
+        </title>
+    </head>
+    <body onload="document.form1.text1.focus()">
+        <main>
+            <section>
+                <h2>
+                    Ingreso al Sistema
+                </h2>
+                <form action="#" method="POST" name="form1" onsubmit="required()">
+                    <fieldset>
+                        <label>
+                            Usuario:
+                            <input id="usuario" name="usuario" placeholder="usu@rio" type="text"/>
+                        </label>
+                        <br>
+                            <label>
+                                Clave:
+                                <input id="clave" name="clave" placeholder="********" type="password"/>
+                            </label>
+                        </br>
+                        <br>
+                            <input id="Validar" name="enviar" onclick="ValidateEmail(document.form1.usuario)" type="submit" value="Submit"/>
+                        </br>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <script type="text/javascript">
+            </script>
+            <script src="control.js">
+            </script>
+        </footer>
+    </body>
+</html>
